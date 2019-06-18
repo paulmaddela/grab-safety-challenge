@@ -10,9 +10,9 @@ Given the telematics data for each trip and the label if the trip is tagged as d
     + speed data
     + gps data 
     + trip duration data
-* **Model building** : Combine all features into a training dataset. Removed observations which had minimum speed value less than 0 as test dataset. Trained a cross validated randomforest model on remaining dataset. Got an **auc of 1.0** on unseen data. Hope the auc is the same on hold-out test dataset.
+* **Model building** : Combine all features into a training dataset. Removed observations which had minimum speed value less than 0 as test dataset. Trained a cross validated randomforest model on remaining dataset. Got an **auc of 0.78** on unseen data. Hope the auc is the same on hold-out test dataset.
 
-Although a total of 212  features were engineered, only 70 were used for training of which 58 were from acceleration data and gyroscope data. This was enough to get an auc score of 1.0 on unseen data. 
+Although a total of 212  features were engineered, only 70 were used for training of which 58 were from acceleration data and gyroscope data. This was enough to get an auc score of 0.78 on unseen data. 
 
 
 ## Data understanding
