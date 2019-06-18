@@ -10,7 +10,7 @@ Given the telematics data for each trip and the label if the trip is tagged as d
     + speed data
     + gps data 
     + trip duration data
-* **Model building** : Combine all features into a training dataset to run a cross-validated randomforest model. 
+* **Model building** : Combine all features into a training dataset. Removed observations which had minimum speed value less than 0 as test dataset. Trained a cross validated randomforest model on remaining dataset. Got an **auc of 1.0** on unseen data. Hope the auc is the same on hold-out test dataset.
 
 
 ## Data understanding
