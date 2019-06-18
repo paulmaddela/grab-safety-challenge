@@ -30,8 +30,8 @@ lomb_scargle <- function(x){
   i <- 1
   while(i<=10) {
     x[,paste0("a_x_freq_",i)] = x_freq[i]
-    x[,paste0("a_x_freq_",i)] = y_freq[i]
-    x[,paste0("a_x_freq_",i)] = z_freq[i]
+    x[,paste0("a_y_freq_",i)] = y_freq[i]
+    x[,paste0("a_z_freq_",i)] = z_freq[i]
     i = i+1
   } 
   
